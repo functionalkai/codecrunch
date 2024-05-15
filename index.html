@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrunch Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <div class="logo">CODECRUNCH</div>
+        </a>
+        <nav>
+            <a href="#" id="daily-challenge">DAILY-CHALLENGE</a>
+            <a href="tasks.html" id="tasks-page">TASKS</a>
+            <a href="archived.html" id="archived-page">ARCHIVED</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="left-panel">
+            <h1>CODE TASK</h1>
+            <p id="code-task-description"></p>
+            <button id="accept-task">Accept</button>
+            <button id="decline-task">Decline</button>
+        </div>
+        <div class="right-panel">
+            <div class="task-list-header">TASK LIST</div>
+            <button class="task-button" id="add-task">ADD A NEW TASK</button>
+            <button class="task-button" id="check-tasks">CHECK TASKS LIST</button>
+            <button class="task-button" id="remove-tasks">REMOVE TASKS</button>
+            <div id="task-list-container">
+                <ul id="task-list"></ul>
+                <div id="tasks-pending">Tasks pending: <span id="pending-count">0</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="alert" class="alert"></div>
+    <script src="app.js"></script>
+</body>
+</html>
